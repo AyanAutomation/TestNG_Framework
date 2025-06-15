@@ -1,0 +1,115 @@
+package com.framework.testngtemplate.locators;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import Code_dumps.Repeatative_codes;
+
+public class Sign_up_locaters extends Repeatative_codes{
+
+	/*
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ; */
+
+	public Sign_up_locaters(WebDriver d){
+	super(d);
+	PageFactory.initElements(d, this); }
+
+/*
+	public WebElement (){
+	wait_for_theElement();	
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();	
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();	
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;} */
+	
+	
+	
+	
+	
+}
