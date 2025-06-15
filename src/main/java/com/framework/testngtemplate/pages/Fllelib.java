@@ -13,9 +13,7 @@ public class Fllelib {
 		   
 		   Properties prop = new Properties();
 		   prop.load(fds);
-	    /* String value = prop.getProperty(key);
-		   return value; */
-		   return prop.getProperty(key);
+	       return prop.getProperty(key);
 		   
 		   
 	   }
