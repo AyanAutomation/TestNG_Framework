@@ -9,7 +9,7 @@ public class Fllelib {
 	
 	   public String Data_reader(String key) throws IOException {
 		   
-		   FileInputStream fds = new FileInputStream("C:\\Users\\PC-129\\OneDrive\\Documents\\NetBeansProjects\\felp-ai\\src\\main\\java\\Data\\data.properties");
+		   FileInputStream fds = new FileInputStream("H:\\Selenium Projects\\TestNG FrameWork Template\\src\\main\\java\\Data\\data.properties");
 		   
 		   Properties prop = new Properties();
 		   prop.load(fds);
