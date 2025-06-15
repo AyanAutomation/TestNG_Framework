@@ -7,8 +7,6 @@ import Code_dumps.Repeatative_codes;
 
 public class Login_Locaters extends Repeatative_codes {
 
-/*	@FindBy(xpath="")
-	private WebElement  ;
 	@FindBy(xpath="")
 	private WebElement  ;
 	@FindBy(xpath="")
@@ -46,7 +44,9 @@ public class Login_Locaters extends Repeatative_codes {
 	@FindBy(xpath="")
 	private WebElement  ;
 	@FindBy(xpath="")
-	private WebElement  ; */
+	private WebElement  ;
+	@FindBy(xpath="")
+	private WebElement  ; 
 	
 	
 	
@@ -57,47 +57,61 @@ public class Login_Locaters extends Repeatative_codes {
 		
 	}
 	
-	/*
 	
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
-	*/
+	
+	public WebElement (){
+	wait_for_theElement();	
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();	
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();	
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	public WebElement (){
+	wait_for_theElement();
+	return ;}
+	
 }

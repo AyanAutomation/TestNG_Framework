@@ -6,7 +6,7 @@ import Code_dumps.Repeatative_codes;
 
 public class Sign_up_locaters extends Repeatative_codes{
 
-	/*
+	
 	@FindBy(xpath="")
 	private WebElement  ;
 	@FindBy(xpath="")
@@ -46,13 +46,13 @@ public class Sign_up_locaters extends Repeatative_codes{
 	@FindBy(xpath="")
 	private WebElement  ;
 	@FindBy(xpath="")
-	private WebElement  ; */
+	private WebElement  ; 
 
 	public Sign_up_locaters(WebDriver d){
 	super(d);
 	PageFactory.initElements(d, this); }
 
-/*
+
 	public WebElement (){
 	wait_for_theElement();	
 	return ;}
@@ -106,7 +106,7 @@ public class Sign_up_locaters extends Repeatative_codes{
 	return ;}
 	public WebElement (){
 	wait_for_theElement();
-	return ;} */
+	return ;} 
 	
 	
 	
