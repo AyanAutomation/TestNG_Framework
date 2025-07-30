@@ -9,7 +9,7 @@ public class Fllelib {
 	
 	   public String Data_reader(String key) throws IOException {
 		   
-		   FileInputStream fds = new FileInputStream("H:\\Selenium Projects\\TestNG FrameWork Template\\src\\main\\java\\Data\\data.properties");
+		   FileInputStream fds = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Data\\data.properties");
 		   
 		   Properties prop = new Properties();
 		   prop.load(fds);
