@@ -2,6 +2,7 @@ package Reports_Listeners;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Extent_reports_and_listerners {
 	
@@ -13,12 +14,18 @@ public class Extent_reports_and_listerners {
 		
 		spark.config().setReportName("[Project name]");
 		spark.config().setDocumentTitle("[Doc_name]");
-		
+		spark.config().setTheme(Theme.STANDARD); // Options: STANDARD / DARK
+        spark.config().setEncoding("UTF-8");
+        spark.config().setTimelineEnabled(true); // Adds execution timeline bar
+        spark.config().setCss(".badge { font-size: 12px; padding: 4px; }");
 		ExtentReports report = new ExtentReports();
 		
 		report.attachReporter(spark);
 		report.setSystemInfo("Automated By", "Tester Name");
-		
+		report.setSystemInfo("Framework", "Selenium + TestNG");
+		report.setSystemInfo("Report Type", "Extent Spark HTML");
+		report.setSystemInfo("OS", System.getProperty("os.name"));
+		report.setSystemInfo("Java Version", System.getProperty("java.version"));
 		return report;
 		
 		

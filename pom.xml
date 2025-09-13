@@ -8,10 +8,9 @@
 <name>TestNG Framework Template</name>
 <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
-
-  <properties>
+ <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>17</maven.compiler.release>
+    <maven.compiler.release>23</maven.compiler.release>
   </properties>
 <dependencyManagement>
     <dependencies>
@@ -31,12 +30,8 @@
       <scope>test</scope>
     </dependency>
     <!-- Optionally: parameterized tests support -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-params</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    
+    
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -50,11 +45,6 @@
    </dependency>
    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports --><!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
    <dependency>
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>5.1.2</version>
-</dependency>
-<dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.2</version>
@@ -85,6 +75,7 @@
 </dependency>
   </dependencies>
   <build>
+  <testSourceDirectory>src/main/java</testSourceDirectory>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -97,11 +88,15 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.3.1</version>
         </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.13.0</version>
-        </plugin>
-        <plugin>
+       <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.11.0</version>
+      <configuration>
+        <release>23</release>
+      </configuration>
+    </plugin>
+      <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.3.0</version>
         </plugin>
