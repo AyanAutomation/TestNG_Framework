@@ -13,14 +13,18 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base {
  
 	public WebDriver d;
+	String url;
+	
+	
 	
 	@BeforeMethod
 	void setup() throws IOException{
 		
 		Fllelib f = new Fllelib(); 
-		String Browsername=  f.Data_reader("Browser_1");
+		String Browsername= System.getProperty("Browser")!=null ? System.getProperty("Browser") : f.Data_reader("Browser_1");
+		url = System.getProperty("url")!=null ? System.getProperty("url") : f.Data_reader("login_url");
 		
-		if(Browsername.equalsIgnoreCase("chrome"))
+		if(Browsername.equalsIgnoreCase("Chrome"))
 		{
 		WebDriverManager.chromedriver().setup();
 		WebDriver d = new ChromeDriver();

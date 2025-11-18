@@ -19,7 +19,7 @@ public class Login extends Base{
 		Login_Locaters l = new Login_Locaters(d);
 		Fllelib f = new Fllelib();
 		
-		d.get(f.Data_reader("login_url"));
+		d.get(url);
 		
 		
 		
