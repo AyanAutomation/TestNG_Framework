@@ -3,8 +3,9 @@
     <test name="LoginTest">
         <classes>
             <class name="com.framework.testngtemplate.pages.Sign_up"/>
-            
-        </classes>
+            <class name="Error_validations.Loginpage_ErrorValidations"/>
+            <class name="com.framework.testngtemplate.pages.Login"/>
+          </classes>
     </test>
 </suite>
 

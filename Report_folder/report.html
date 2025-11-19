@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>[Doc_name]</title>
+<title>Automation Report Document</title>
 <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
@@ -32,10 +32,10 @@
 </ul>
 <ul class="nav-right">
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">[Project name]</span></a>
+<a href="#"><span class="badge badge-primary">Dummy Project</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 19, 2025 04:57:09 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 19, 2025 06:36:56 PM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,9 +85,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">invalid_logging_in</p>
+            <p class="name">Sign_up_form</p>
             <p class="text-sm">
-              <span>4:57:12 PM</span> / <span>00:00:07:824</span>
+              <span>6:36:59 PM</span> / <span>00:00:06:834</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +95,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">invalid_logging_in</h5>
-<span class='badge badge-success'>11.19.2025 4:57:12 PM</span>
-<span class='badge badge-danger'>11.19.2025 4:57:19 PM</span>
-<span class='badge badge-default'>00:00:07:824</span>
+<h5 class="test-status text-pass">Sign_up_form</h5>
+<span class='badge badge-success'>11.19.2025 6:36:59 PM</span>
+<span class='badge badge-danger'>11.19.2025 6:37:05 PM</span>
+<span class='badge badge-default'>00:00:06:834</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,42 +111,49 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:14 PM</td>
+        <td>6:37:01 PM</td>
         <td>
-          Please fill out Username and Password.
+           Testcase Passed Blank id and pass showing error message Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:14 PM</td>
+        <td>6:37:03 PM</td>
         <td>
-          Testcase Passed Blank Validation for fields present
+          Testcase Passed Blank id showing error message  Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:15 PM</td>
+        <td>6:37:04 PM</td>
         <td>
-          Testcase Passed id Blank Validation error message Please fill out Username and Password. present
+          Testcase Passed Blank password showing error message  Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:17 PM</td>
+        <td>6:37:05 PM</td>
         <td>
-          Testcase Passed password Blank Validation error message Please fill out Username and Password. present
+          Testcase passed alpha@_test showing This user already exist.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:19 PM</td>
+        <td>6:37:05 PM</td>
         <td>
-          Error Thrown for wrong id or pass   Wrong password.
+          Testcase failed alpha@_test showing This user already exist.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:05 PM</td>
+        <td>
+          Testcase passed alpha@_test showing This user already exist.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:57:19 PM</td>
+        <td>6:37:05 PM</td>
         <td>
           Test passed
         </td>
@@ -150,25 +163,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">invalid_logging_in</p>
+            <p class="name">Sign_up_form</p>
             <p class="text-sm">
-              <span>4:57:20 PM</span> / <span>00:00:07:813</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>6:37:06 PM</span> / <span>00:00:06:413</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">invalid_logging_in</h5>
-<span class='badge badge-success'>11.19.2025 4:57:20 PM</span>
-<span class='badge badge-danger'>11.19.2025 4:57:28 PM</span>
-<span class='badge badge-default'>00:00:07:813</span>
+<h5 class="test-status text-fail">Sign_up_form</h5>
+<span class='badge badge-success'>11.19.2025 6:37:06 PM</span>
+<span class='badge badge-danger'>11.19.2025 6:37:13 PM</span>
+<span class='badge badge-default'>00:00:06:413</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -181,44 +194,79 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:23 PM</td>
+        <td>6:37:09 PM</td>
         <td>
-          Please fill out Username and Password.
+           Testcase Passed Blank id and pass showing error message Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:23 PM</td>
+        <td>6:37:10 PM</td>
         <td>
-          Testcase Passed Blank Validation for fields present
+          Testcase Passed Blank id showing error message  Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:24 PM</td>
+        <td>6:37:11 PM</td>
         <td>
-          Testcase Passed id Blank Validation error message Please fill out Username and Password. present
+          Testcase Passed Blank password showing error message  Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:25 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:37:13 PM</td>
         <td>
-          Testcase Passed password Blank Validation error message Please fill out Username and Password. present
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:27 PM</td>
-        <td>
-          Error Thrown for wrong id or pass   User does not exist.
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:57:28 PM</td>
-        <td>
-          Test passed
+          <textarea readonly class="code-block">org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=142.0.7444.163)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb2d8d918d08c5cf573ba02ecfcfe29f, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\CODECL~2\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49867}, goog:processID: 12388, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49867/devtoo..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb2d8d918d08c5cf573ba02ecfcfe29f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1175)
+	at com.framework.testngtemplate.pages.Sign_up.Sign_up_form(Sign_up.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -231,9 +279,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">invalid_logging_in</p>
+            <p class="name">Sign_up_form</p>
             <p class="text-sm">
-              <span>4:57:29 PM</span> / <span>00:00:07:665</span>
+              <span>6:37:14 PM</span> / <span>00:00:06:632</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -241,10 +289,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">invalid_logging_in</h5>
-<span class='badge badge-success'>11.19.2025 4:57:29 PM</span>
-<span class='badge badge-danger'>11.19.2025 4:57:37 PM</span>
-<span class='badge badge-default'>00:00:07:665</span>
+<h5 class="test-status text-pass">Sign_up_form</h5>
+<span class='badge badge-success'>11.19.2025 6:37:14 PM</span>
+<span class='badge badge-danger'>11.19.2025 6:37:20 PM</span>
+<span class='badge badge-default'>00:00:06:632</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -257,42 +305,49 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:32 PM</td>
+        <td>6:37:17 PM</td>
         <td>
-          Please fill out Username and Password.
+           Testcase Passed Blank id and pass showing error message Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:32 PM</td>
+        <td>6:37:18 PM</td>
         <td>
-          Testcase Passed Blank Validation for fields present
+          Testcase Passed Blank id showing error message  Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:33 PM</td>
+        <td>6:37:19 PM</td>
         <td>
-          Testcase Passed id Blank Validation error message Please fill out Username and Password. present
+          Testcase Passed Blank password showing error message  Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:34 PM</td>
+        <td>6:37:20 PM</td>
         <td>
-          Testcase Passed password Blank Validation error message Please fill out Username and Password. present
+          Testcase passed gamma.login@yopmail.com showing This user already exist.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:36 PM</td>
+        <td>6:37:20 PM</td>
         <td>
-          Error Thrown for wrong id or pass   User does not exist.
+          Testcase failed gamma.login@yopmail.com showing This user already exist.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:20 PM</td>
+        <td>
+          Testcase passed gamma.login@yopmail.com showing This user already exist.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:57:37 PM</td>
+        <td>6:37:20 PM</td>
         <td>
           Test passed
         </td>
@@ -307,9 +362,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">invalid_logging_in</p>
+            <p class="name">Sign_up_form</p>
             <p class="text-sm">
-              <span>4:57:38 PM</span> / <span>00:00:08:033</span>
+              <span>6:37:21 PM</span> / <span>00:00:06:594</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -317,10 +372,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">invalid_logging_in</h5>
-<span class='badge badge-success'>11.19.2025 4:57:38 PM</span>
-<span class='badge badge-danger'>11.19.2025 4:57:46 PM</span>
-<span class='badge badge-default'>00:00:08:033</span>
+<h5 class="test-status text-pass">Sign_up_form</h5>
+<span class='badge badge-success'>11.19.2025 6:37:21 PM</span>
+<span class='badge badge-danger'>11.19.2025 6:37:28 PM</span>
+<span class='badge badge-default'>00:00:06:594</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -333,49 +388,401 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:40 PM</td>
+        <td>6:37:24 PM</td>
+        <td>
+           Testcase Passed Blank id and pass showing error message Please fill out Username and Password.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:25 PM</td>
+        <td>
+          Testcase Passed Blank id showing error message  Please fill out Username and Password.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:27 PM</td>
+        <td>
+          Testcase Passed Blank password showing error message  Please fill out Username and Password.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:28 PM</td>
+        <td>
+          Testcase passed avbps202024@yopmail.com showing This user already exist.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:28 PM</td>
+        <td>
+          Testcase failed avbps202024@yopmail.com showing This user already exist.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:28 PM</td>
+        <td>
+          Testcase passed avbps202024@yopmail.com showing This user already exist.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:37:28 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">invalid_logging_in</p>
+            <p class="text-sm">
+              <span>6:37:29 PM</span> / <span>00:00:07:698</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">invalid_logging_in</h5>
+<span class='badge badge-success'>11.19.2025 6:37:29 PM</span>
+<span class='badge badge-danger'>11.19.2025 6:37:37 PM</span>
+<span class='badge badge-default'>00:00:07:698</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:32 PM</td>
         <td>
           Please fill out Username and Password.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:40 PM</td>
+        <td>6:37:32 PM</td>
         <td>
           Testcase Passed Blank Validation for fields present
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:41 PM</td>
+        <td>6:37:33 PM</td>
         <td>
           Testcase Passed id Blank Validation error message Please fill out Username and Password. present
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:43 PM</td>
+        <td>6:37:34 PM</td>
         <td>
           Testcase Passed password Blank Validation error message Please fill out Username and Password. present
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:46 PM</td>
+        <td>6:37:36 PM</td>
+        <td>
+          Error Thrown for wrong id or pass   Wrong password.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:37:37 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">invalid_logging_in</p>
+            <p class="text-sm">
+              <span>6:37:38 PM</span> / <span>00:00:07:794</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">invalid_logging_in</h5>
+<span class='badge badge-success'>11.19.2025 6:37:38 PM</span>
+<span class='badge badge-danger'>11.19.2025 6:37:45 PM</span>
+<span class='badge badge-default'>00:00:07:794</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:41 PM</td>
+        <td>
+          Please fill out Username and Password.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:41 PM</td>
+        <td>
+          Testcase Passed Blank Validation for fields present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:42 PM</td>
+        <td>
+          Testcase Passed id Blank Validation error message Please fill out Username and Password. present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:43 PM</td>
+        <td>
+          Testcase Passed password Blank Validation error message Please fill out Username and Password. present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:45 PM</td>
+        <td>
+          Error Thrown for wrong id or pass   User does not exist.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:37:45 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">invalid_logging_in</p>
+            <p class="text-sm">
+              <span>6:37:46 PM</span> / <span>00:00:07:650</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">invalid_logging_in</h5>
+<span class='badge badge-success'>11.19.2025 6:37:46 PM</span>
+<span class='badge badge-danger'>11.19.2025 6:37:54 PM</span>
+<span class='badge badge-default'>00:00:07:650</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:49 PM</td>
+        <td>
+          Please fill out Username and Password.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:49 PM</td>
+        <td>
+          Testcase Passed Blank Validation for fields present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:50 PM</td>
+        <td>
+          Testcase Passed id Blank Validation error message Please fill out Username and Password. present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:51 PM</td>
+        <td>
+          Testcase Passed password Blank Validation error message Please fill out Username and Password. present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:53 PM</td>
+        <td>
+          Error Thrown for wrong id or pass   User does not exist.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:37:54 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">invalid_logging_in</p>
+            <p class="text-sm">
+              <span>6:37:55 PM</span> / <span>00:00:08:325</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">invalid_logging_in</h5>
+<span class='badge badge-success'>11.19.2025 6:37:55 PM</span>
+<span class='badge badge-danger'>11.19.2025 6:38:03 PM</span>
+<span class='badge badge-default'>00:00:08:325</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:58 PM</td>
+        <td>
+          Please fill out Username and Password.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:58 PM</td>
+        <td>
+          Testcase Passed Blank Validation for fields present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:37:59 PM</td>
+        <td>
+          Testcase Passed id Blank Validation error message Please fill out Username and Password. present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:38:00 PM</td>
+        <td>
+          Testcase Passed password Blank Validation error message Please fill out Username and Password. present
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:38:03 PM</td>
         <td>
           Error not Thrown for id --------->>>   avbps202024@yopmail.com and pass---------------->>>>    1234578
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>4:57:46 PM</td>
+        <td>6:38:03 PM</td>
         <td>
           Welcome avbps202024@yopmail.com
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>4:57:46 PM</td>
+        <td>6:38:03 PM</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">logging_in</p>
+            <p class="text-sm">
+              <span>6:38:04 PM</span> / <span>00:00:02:386</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">logging_in</h5>
+<span class='badge badge-success'>11.19.2025 6:38:04 PM</span>
+<span class='badge badge-danger'>11.19.2025 6:38:07 PM</span>
+<span class='badge badge-default'>00:00:02:386</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:38:07 PM</td>
         <td>
           Test passed
         </td>
@@ -394,30 +801,79 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoAlertPresentException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoAlertPresentException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:37:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Sign_up_form</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 19, 2025 04:57:09 PM</h3>
+<h3>Nov 19, 2025 06:36:56 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 19, 2025 04:57:46 PM</h3>
+<h3>Nov 19, 2025 06:38:07 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>4</h3>
+<h3>8</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -433,12 +889,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>4</b> tests passed
+<div><small data-tooltip='88%'>
+<b>8</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='11%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -456,10 +912,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='16%'><b>4</b> events passed</small></div>
+<div><small data-tooltip='15%'><b>8</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>21</b> others
+<small data-tooltip='1%'><b>1</b> events failed,
+<b data-tooltip='%'>42</b> others
 </small>
 </div>
 </div>
@@ -475,7 +931,7 @@
 </div></div>
 <script>
 var timeline = {
-"invalid_logging_in":7.824,"invalid_logging_in":7.813,"invalid_logging_in":7.665,"invalid_logging_in":8.033
+"Sign_up_form":6.834,"Sign_up_form":6.413,"Sign_up_form":6.632,"Sign_up_form":6.594,"invalid_logging_in":7.698,"invalid_logging_in":7.794,"invalid_logging_in":7.65,"invalid_logging_in":8.325,"logging_in":2.386
 };
 </script>
 <div class="row">
@@ -514,8 +970,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 4,
-failParent: 0,
+passParent: 8,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -531,11 +987,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 4,
-failEvents: 0,
+passEvents: 8,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 21
+infoEvents: 42
 };
 </script>        </div>
       </div>

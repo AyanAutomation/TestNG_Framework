@@ -12,8 +12,8 @@ public class Extent_reports_and_listerners {
 		
 		ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")+"//Report_folder//report.html");
 		
-		spark.config().setReportName("[Project name]");
-		spark.config().setDocumentTitle("[Doc_name]");
+		spark.config().setReportName("Dummy Project");
+		spark.config().setDocumentTitle("Automation Report Document");
 		spark.config().setTheme(Theme.STANDARD); // Options: STANDARD / DARK
         spark.config().setEncoding("UTF-8");
         spark.config().setTimelineEnabled(true); // Adds execution timeline bar

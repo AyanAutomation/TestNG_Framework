@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Error_validations.Loginpage_ErrorValidations">
+      <class name="com.framework.testngtemplate.pages.Sign_up">
         <methods>
-          <include name="invalid_logging_in" invocation-numbers="0 1 2"/>
+          <include name="Sign_up_form" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="driverKill"/>
         </methods>
-      </class> <!-- Error_validations.Loginpage_ErrorValidations -->
+      </class> <!-- com.framework.testngtemplate.pages.Sign_up -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
