@@ -9,9 +9,9 @@ import Code_dumps.Repeatative_codes;
 
 public class Login_Locaters extends Repeatative_codes {
 
-	@FindBy(xpath="")
+	@FindBy(id="loginusername")
 	private WebElement login_id_field;
-	@FindBy(xpath="")
+	@FindBy(id="loginpassword")
 	private WebElement password_field;
 	@FindBy(xpath="")
 	private WebElement password_eye_button;
@@ -20,13 +20,13 @@ public class Login_Locaters extends Repeatative_codes {
 	@FindBy(xpath="")
 	private WebElement Success_toast;
 	@FindBy(xpath="")
-	private WebElement Error_messages; /*
-	@FindBy(xpath="")
-	private WebElement Login_submit_button;
-	@FindBy(xpath="")
-	private WebElement  ;
-	@FindBy(xpath="")
-	private WebElement  ;
+	private WebElement Error_messages; 
+	@FindBy(xpath="//button[text()='Log in']")
+	private WebElement Login_submit_button; 
+	@FindBy(id="logout2")
+	private WebElement logout_button; 
+	@FindBy(id="nameofuser")
+	private WebElement  login_confirmation; /*
 	@FindBy(xpath="")
 	private WebElement  ;
 	@FindBy(xpath="")
@@ -55,9 +55,7 @@ public class Login_Locaters extends Repeatative_codes {
 	public Login_Locaters(WebDriver d){
 		
 	super(d);	
-	PageFactory.initElements(d, this);	
-		
-	}
+	PageFactory.initElements(d, this);}
 	
 	
 	
@@ -78,16 +76,16 @@ public class Login_Locaters extends Repeatative_codes {
 	return Success_toast;}
 	public WebElement Error_messages(){
 	wait_for_theElement(Error_messages);
-	return Error_messages;} /*
-	public WebElement (){
-	wait_for_theElement();	
-	return ;}
-	public WebElement (){
-	wait_for_theElement();
-	return ;}
-	public WebElement (){
-	wait_for_theElement();
-	return ;}
+	return Error_messages;} 
+	public WebElement Login_submit_button(){
+	wait_for_theElement(Login_submit_button);	
+	return Login_submit_button;} 
+	public WebElement logout_button(){
+	wait_for_theElement(logout_button);
+	return logout_button;} 
+	public WebElement login_confirmation(){
+	wait_for_theElement(login_confirmation);
+	return login_confirmation;} /*
 	public WebElement (){
 	wait_for_theElement();
 	return ;}

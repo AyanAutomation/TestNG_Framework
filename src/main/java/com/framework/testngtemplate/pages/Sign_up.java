@@ -31,42 +31,21 @@ public class Sign_up extends Base{
 		ss.submit_button().click();
 		Thread.sleep(800);try{
 		alert_text= d.switchTo().alert().getText();	
-		System.out.println(alert_text);
-		System.out.println();
-		ReportListeners.log_print_in_report().log(Status.INFO,alert_text);
-		if(alert_text.contains("Sign up successful.")){
-			System.out.println(data.get("id"));
-			ReportListeners.log_print_in_report().log(Status.INFO,"email id  "+data.get("id"));
-			System.out.println("Password  "+data.get("pass"));
-			ReportListeners.log_print_in_report().log(Status.INFO,"Password  "+data.get("pass"));
-			System.out.println(data.get("pass").contains("   ")?"Testcase Failed Taking blank Password":" Testcase Passed not taking blank password");
-			System.out.println();}
-		if(alert_text.contains("This user already exist.")){
-			System.out.println(data.get("id"));
-			ReportListeners.log_print_in_report().log(Status.INFO,"email id  "+data.get("id"));
-			System.out.println("Password  "+data.get("pass"));
-			ReportListeners.log_print_in_report().log(Status.INFO,"Password  "+data.get("pass"));
-			System.out.println();} 
+        ReportListeners.log_print_in_report().log(Status.INFO,alert_text);
+		ReportListeners.log_print_in_report().log(Status.INFO,alert_text.contains("Sign up successful.")&&!data.get("id").contains(".com") ?"email id  "+data.get("id")+"  "+data.get("pass"):"Sign up not successful.");
+		ReportListeners.log_print_in_report().log(Status.INFO,data.get("pass").contains("   ")&&alert_text.contains("Sign up successful.")?"Testcase Failed Taking blank Password":" Testcase Passed not taking blank password");
+		ReportListeners.log_print_in_report().log(Status.INFO,alert_text.contains("This user already exist.") ?"email id  "+data.get("id")+"  "+data.get("pass"):"Sign up not successful.");
 		d.switchTo().alert().accept();}
 		catch(Exception k){
 			Thread.sleep(800);	
 			ss.submit_button().click();
-			System.out.println(d.switchTo().alert().getText());
-			System.out.println();
-			if(alert_text.contains("Sign up successful.")){
-				System.out.println(data.get("id"));
-				ReportListeners.log_print_in_report().log(Status.INFO,"email id  "+data.get("id"));
-				System.out.println("Password  "+data.get("pass"));
-				ReportListeners.log_print_in_report().log(Status.INFO,"Password  "+data.get("pass"));
-				System.out.println(data.get("pass").contains("   ")?"Testcase Failed Taking blank Password":" Testcase Passed not taking blank password");
-				System.out.println();}
-			if(alert_text.contains("This user already exist.")){
-				System.out.println(data.get("id"));
-				ReportListeners.log_print_in_report().log(Status.INFO,"email id  "+data.get("id"));
-				System.out.println("Password  "+data.get("pass"));
-				ReportListeners.log_print_in_report().log(Status.INFO,"Password  "+data.get("pass"));
-				System.out.println();}
-			d.switchTo().alert().accept();}}
+			Thread.sleep(800);
+			ReportListeners.log_print_in_report().log(Status.INFO,alert_text);
+			ReportListeners.log_print_in_report().log(Status.INFO,alert_text.contains("Sign up successful.") ?"email id  "+data.get("id")+data.get("pass"):"Sign up not successful.");
+			ReportListeners.log_print_in_report().log(Status.INFO,data.get("pass").contains("   ")&&alert_text.contains("Sign up successful.")?"Testcase Failed Taking blank Password":" Testcase Passed not taking blank password");
+			d.switchTo().alert().accept();}
+	
+	}
 	
 	
 	
@@ -76,13 +55,13 @@ public class Sign_up extends Base{
 		Fllelib f = new Fllelib();
 		
 		TreeMap<String,String> t1 = new TreeMap<String,String>();
-		t1.put("id", "120g0@b");
-		t1.put("pass", "   ");
+		t1.put("id", "a120g0@bb");
+		t1.put("pass", "4455235");
 		TreeMap<String,String> t2 = new TreeMap<String,String>();
-		t2.put("id", "kb202@b.com");
+		t2.put("id", "akb202@bm.com");
 		t2.put("pass", "   ");
 		TreeMap<String,String> t3 = new TreeMap<String,String>();
-		t3.put("id", "n202@lb.com");
+		t3.put("id", "an202@lb3.com");
 		t3.put("pass", "4455235");
 		TreeMap<String,String> t4 = new TreeMap<String,String>();
 		t4.put("id", f.Data_reader("valid_id"));
