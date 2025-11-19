@@ -8,7 +8,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class Listeners extends Extent_reports_and_listerners implements ITestListener{
+public class ReportListeners extends Extent_reports_and_listerners implements ITestListener{
 
 	ExtentReports report = Get_reports();
 	

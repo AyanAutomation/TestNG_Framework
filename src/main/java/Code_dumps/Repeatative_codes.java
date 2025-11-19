@@ -26,7 +26,7 @@ public class Repeatative_codes {
 	    w.until(ExpectedConditions.visibilityOf(element));}
 	
 	
-	public void wait_for_allElements(List <WebElement> element){
+	public void wait_for_theElement(List <WebElement> element){
 		 
 	     if (element == null || element.isEmpty()) {
 		 throw new RuntimeException("Element list is null or empty. Check the locator or timing."); }

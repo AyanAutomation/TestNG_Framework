@@ -2,34 +2,22 @@ package com.framework.testngtemplate.pages;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.framework.testngtemplate.locators.Login_Locaters;
 
-import Reports_Listeners.Extent_reports_and_listerners;
 
-
-@Listeners(Reports_Listeners.Listeners.class)
+@Listeners(Reports_Listeners.ReportListeners.class)
 public class Login extends Base{
 	
-	@Test
-	void logging_in() throws IOException{
+	
+	
+    @Test
+	public void logging_in() throws IOException{
 		
 		Login_Locaters l = new Login_Locaters(d);
-		Fllelib f = new Fllelib();
-		
-		d.get(url);
-		
-		
-		
-		
-		
-		
-		
-		}
-	
-	
-	
-
-}
+		d.get(target_url);
+		l.Login_button().click();
+		}}

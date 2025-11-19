@@ -13,47 +13,41 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base {
  
 	public WebDriver d;
-	String url;
+	public String target_url;
 	
 	
 	
 	@BeforeMethod
-	void setup() throws IOException{
+	public void setup() throws IOException{
 		
 		Fllelib f = new Fllelib(); 
 		String Browsername= System.getProperty("Browser")!=null ? System.getProperty("Browser") : f.Data_reader("Browser_1");
-		url = System.getProperty("url")!=null ? System.getProperty("url") : f.Data_reader("login_url");
+		target_url = System.getProperty("url")!=null ? System.getProperty("url") : f.Data_reader("login_url");
+		
 		
 		if(Browsername.equalsIgnoreCase("Chrome"))
 		{
 		WebDriverManager.chromedriver().setup();
-		WebDriver d = new ChromeDriver();
-		d.manage().window().maximize();
-		}
+		d = new ChromeDriver();
+		d.manage().window().maximize();}
 		
 		if(Browsername.equalsIgnoreCase("Firefox"))
 		{
 		WebDriverManager.firefoxdriver().setup();
-		WebDriver d = new FirefoxDriver();
+		d = new FirefoxDriver();
 		d.manage().window().maximize();	
-		}
-		
-		
-		
-		
-	}
+		}}
 	
 	
 	
 	@AfterMethod
-	void driverKill(){
+	public void driverKill(){
 		
 		
 		if(d!=null){
 			
 			d.quit();
-			System.out.println("After Method Runned Successfully");
-		}
+			System.out.println("After Method Runned Successfully");}
 		
 		
 		

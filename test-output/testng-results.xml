@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-19T14:26:22 IST" name="Default suite" finished-at="2025-11-19T14:26:39 IST" duration-ms="17442">
+    <groups>
+    </groups>
+    <test started-at="2025-11-19T14:26:22 IST" name="Default test" finished-at="2025-11-19T14:26:39 IST" duration-ms="17442">
+      <class name="com.framework.testngtemplate.pages.Sign_up">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:22 IST" name="setup" finished-at="2025-11-19T14:26:23 IST" duration-ms="1844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Sign_up_form(java.util.TreeMap)[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:23 IST" name="Sign_up_form" data-provider="signupDatas" finished-at="2025-11-19T14:26:27 IST" duration-ms="3335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=g@b, pass=   }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sign_up_form -->
+        <test-method is-config="true" signature="driverKill()[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:27 IST" name="driverKill" finished-at="2025-11-19T14:26:27 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverKill -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:27 IST" name="setup" finished-at="2025-11-19T14:26:28 IST" duration-ms="834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Sign_up_form(java.util.TreeMap)[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:28 IST" name="Sign_up_form" data-provider="signupDatas" finished-at="2025-11-19T14:26:31 IST" duration-ms="3034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=b@b.com, pass=   }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sign_up_form -->
+        <test-method is-config="true" signature="driverKill()[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:31 IST" name="driverKill" finished-at="2025-11-19T14:26:31 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverKill -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:31 IST" name="setup" finished-at="2025-11-19T14:26:32 IST" duration-ms="837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Sign_up_form(java.util.TreeMap)[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:32 IST" name="Sign_up_form" data-provider="signupDatas" finished-at="2025-11-19T14:26:35 IST" duration-ms="2909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=n@b.com, pass=4455235}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sign_up_form -->
+        <test-method is-config="true" signature="driverKill()[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:35 IST" name="driverKill" finished-at="2025-11-19T14:26:35 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverKill -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:35 IST" name="setup" finished-at="2025-11-19T14:26:36 IST" duration-ms="832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Sign_up_form(java.util.TreeMap)[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:36 IST" name="Sign_up_form" data-provider="signupDatas" finished-at="2025-11-19T14:26:39 IST" duration-ms="3031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=avbps202024@yopmail.com, pass=1234578}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sign_up_form -->
+        <test-method is-config="true" signature="driverKill()[pri:0, instance:com.framework.testngtemplate.pages.Sign_up@dd8ba08]" started-at="2025-11-19T14:26:39 IST" name="driverKill" finished-at="2025-11-19T14:26:39 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverKill -->
+      </class> <!-- com.framework.testngtemplate.pages.Sign_up -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
