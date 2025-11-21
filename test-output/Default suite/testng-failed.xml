@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.framework.testngtemplate.pages.Sign_up">
+      <class name="com.framework.testngtemplate.pages.Add_Product_to_cart">
         <methods>
-          <include name="Sign_up_form" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="product_add" invocation-numbers="1"/>
           <include name="driverKill"/>
         </methods>
-      </class> <!-- com.framework.testngtemplate.pages.Sign_up -->
+      </class> <!-- com.framework.testngtemplate.pages.Add_Product_to_cart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

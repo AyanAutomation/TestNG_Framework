@@ -15,7 +15,7 @@ public class Login extends Base{
 	
 	
 	
-    @Test
+    
 	public void logging_in() throws IOException{
 		
 		Login_Locaters l = new Login_Locaters(d);
@@ -27,4 +27,5 @@ public class Login extends Base{
 		l.login_id().sendKeys(f.Data_reader("valid_id"));
 		l.password_field().sendKeys(f.Data_reader("valid_pass"));
 		l.Login_submit_button().click();
+		l.logout_button();
 		}}

@@ -1,5 +1,6 @@
 package Code_dumps;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -39,9 +40,15 @@ public class Repeatative_codes {
 		 public void movetoelement(WebElement element){
 			
 			Actions a = new Actions(d);
-			a.moveToElement(element).build().perform();
-			
-		}
+			a.moveToElement(element).build().perform();}
+		 
+		 public void Scroll_to_element(WebElement element){
+			 
+			 JavascriptExecutor js = (JavascriptExecutor)d;
+			 js.executeScript("arguments[0].scrollIntoView(true);", element);}
+		 
+		 
+		 
 
 	}
 	

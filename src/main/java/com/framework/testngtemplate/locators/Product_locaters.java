@@ -14,21 +14,21 @@ public class Product_locaters extends Repeatative_codes{
 	
 	
 	@FindBy(xpath="//*[@class='col-lg-9']//h4")
-	private WebElement  Product_names; 
+	private List <WebElement>  Product_names; 
 	@FindBy(xpath="//*[@class='btn btn-success btn-lg']")
 	private WebElement Add_to_cart_button; 
 	@FindBy(xpath="//a[@href='cart.html']")
 	private WebElement Header_cart_accessor; 
-	@FindBy(xpath="//td")
+	@FindBy(xpath="//tbody//tr")
 	private List <WebElement> cart_product_list_contents; 
 	@FindBy(xpath="//button[@class='btn btn-success']")
 	private WebElement Place_order_button; 
 	@FindBy(xpath="(//form)[3]")
 	private WebElement Pop_order_address_form;  
 	@FindBy(xpath="(//*[@class='modal-content'])[3]//button[@onclick]")
-	private WebElement address_form_submit_button;/*
-	@FindBy(xpath="")
-	private WebElement  ;
+	private WebElement address_form_submit_button;
+	@FindBy(xpath="(//p)[9]")
+	private WebElement order_confirmation_text; /*
 	@FindBy(xpath="")
 	private WebElement  ;
 	@FindBy(xpath="")
@@ -45,7 +45,7 @@ public class Product_locaters extends Repeatative_codes{
 	PageFactory.initElements(d, this); }
 	
 	
-	public WebElement Product_names(){
+	public List <WebElement> Product_names(){
 	wait_for_theElement(Product_names);	
 	return Product_names;} 
 	public WebElement Add_to_cart_button(){
@@ -70,10 +70,10 @@ public class Product_locaters extends Repeatative_codes{
 	return input_fields;} 
 	public WebElement address_form_submit_button(){
 	wait_for_theElement(address_form_submit_button);
-	return address_form_submit_button;} /*
-	public WebElement (){
-	wait_for_theElement();
-	return ;}
+	return address_form_submit_button;} 
+	public WebElement order_confirmation_text(){
+	wait_for_theElement(order_confirmation_text);
+	return order_confirmation_text;} /*
 	public WebElement (){
 	wait_for_theElement();
 	return ;}
